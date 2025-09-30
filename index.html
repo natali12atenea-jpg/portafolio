@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+</head>
+<body>
+/* Reset basico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+/* Header */
+header {
+    background-color: #af1919;
+    color: white;
+    text-align: center;      
+    padding: 20px;
+}      
+nav  {
+    background-color: #333;
+    color: white;
+    text-align: center;      
+    padding: 10px;
+}
+nav a  {
+    color: white;      
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+/* Contenido principal */
+section {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;      
+    padding: 20px;
+    flex-wrap: wrap;
+}
+/* Clase para estilo general para todas las secciones */
+     .izquierda, 
+     .centro,
+	 .derecha {
+      padding: 20px;
+      border-radius: 8px;
+      box-sizing: border-box; 
+}
+/* Estilo seccion izquierda */
+.izquierda {
+    flex: 1;
+    background-color: #ffcccc;
+}
+/* Seccion central */
+.centro {
+    flex: 2;
+    background-color: #ccffd4;
+}
+.derecha {
+    flex: 1;
+    background-color: #ecccff;
+}
+iframe  {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+/* Footer*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .izquierda,
+    .centro,
+    .derecha {
+        flex: 1 1 100%; /* Cada seccion ocupa el 100% del ancho*/
+        margin-bottom: 5px; /* Espaciado entre secciones apiladas */
+    }
+}
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="estilos.css">
+        <meta charset="UTF-8" />
+        <title>Title</title>
+    </head>
+    <body>
+    <!-- header -->
+    <header>
+        <div class="imagenes-juntas">
+    <img src="img/tarjeta%20personal.jpg" alt="cartel" style="width:432px; height:auto;">
+    <img src="img/nat%20tarjeta.jpg" alt="cartel" style="width:239px; height:auto;">
+    <img src="img/tarjeta%20personal.jpg" alt="cartel" style="width:432px; height:auto;">
+       </div>
+        <h1>Portafolio Personal de Natali Lopez</h1>
+        <p>Estudiante, diseñadora grafica, apacionada de la danza</p>
+    </header>
+    <!-- Nav -->
+    <nav>
+        <a href="plantilla.html" target="iframe-content">Inicio</a>
+        <a href="proyecto%201.html" target="iframe-content">Proyectos</a>
+        <a href="proyecto%203.html" target="iframe-content">Contactos</a>
+    </nav>
+    <!-- Main -->
+    <section>
+    <!-- seccion izquierda -->
+        <div class="izquierda">
+            <h2>Enlaces Rapidos</h2>
+            <ul style="list-style: none; padding: 0;">
+            <li><a href="proyecto%201.html" target="iframe-content">Ver Proyecto 1</a></li>
+            <li><a href="proyecto%202.html" target="iframe-content">Ver Proyecto 2</a></li>
+            <li><a href="proyecto%203.html" target="iframe-content">Ver Proyecto 3</a></li>
+            </ul>
+        </div>
+        
+    <!-- seccion central -->
+    <div class="centro">
+        <h2>Visualizador de Proyectos</h2>
+        <iframe name="iframe-content" title="contenido" src="proyecto 1"></iframe>
+    </div>
+    <!-- seccion derecha -->
+    <div class="derecha">
+        <h2>Destacados</h2>
+        <article>
+            <img src="img/practica%20N1%20-%20cholita.jpg" alt="Imagen 1" style="width:432px; height:auto;">
+            <p>Practica de el 1er. bimestre de el instituto atenea.</p>
+        </article>
+        <article>
+            <img src="img/Practica%20N2%20-%20modelado%20parte%202%20(1).jpg" alt="Imagen 2" style="width:432px; height:auto;">
+            <p>Practica de el 1er. bimestre de el instituto atenea.</p>
+        </article>
+        <article>
+            <img src="img/INFOGRAFIA%20EMOCIONAL%20%5BRecuperado%5D.jpg" alt="Imagen 3" style="width:432px; height:auto;">
+            <p>Infogafia emocional.</p>
+        </article>
+    </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mi portafolio - Todos los derechos reservados</p>
+    </footer>
+    </body>
+</html>
